@@ -1,0 +1,17 @@
+{
+	"useTabs": true,
+	"trailingComma": "none",
+	"arrowParens": "always",
+	"singleQuote": false,
+	"semi": true,
+	"tabWidth": 2,
+	"overrides": [
+		{
+			"files": ["*.json", "package.json", "package-lock.json", "yarn.lock"],
+			"options": {
+				"tabWidth": 4,
+				"useTabs": true
+			}
+		}
+	]
+}

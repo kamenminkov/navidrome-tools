@@ -1,0 +1,30 @@
+{
+	"name": "navidrome-tools",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"debug": "nodemon -w",
+		"update-timestamps": "ts-node src/index.ts",
+		"parse-xml": "nodemon ./src/scripts/parse-xml.ts -w ./src/scripts/parse-xml.ts",
+		"copy-db-from-navidrome": "ts-node ./src/scripts/copy-db-from-navidrome.ts",
+		"copy-db-to-navidrome": "ts-node ./src/scripts/copy-db-to-navidrome.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@prettier/plugin-xml": "3.4.2"
+	},
+	"devDependencies": {
+		"dotenv": "17.2.1",
+		"fxp-cli": "0.0.2",
+		"fast-xml-parser": "5.2.5",
+		"nodemon": "3.1.10",
+		"prettier": "3.6.2",
+		"sqlite": "5.1.1",
+		"sqlite3": "5.1.7",
+		"ts-node": "10.9.2",
+		"ts-node-dev": "2.0.0"
+	}
+}
